@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aproximación</title>
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+        crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/main.css">
+</head>
+<body>
+  <div class="container-fluid app">
+    <div class="row">
+      <div class="col-md-4">
+        <aside>
+          <address>
+            Aproximación del punto medio<br>
+            José Yair Mendoza Zamudio<br>
+          </address>
+          
+          <div class="form-group">
+            Límite superior: <input type="text" id="limSup" class="form-control col-md-4" placeholder="Ingresa un número" name="limSup">
+          </div>
+    
+          <div class="form-group">
+            Límite inferior: <input type="text" id="limInf" class="form-control col-md-4" placeholder="Ingresa un número" name="limInf">
+          </div>
+    
+          <div class="form-group">
+            Objetivo: <input type="text" id="objetivo" class="form-control col-md-4"placeholder="Ingresa un número" name="objetivo">
+          </div>
+    
+          <div class="form-group">
+            Error: <input type="text" id="error" class="form-control col-md-4"placeholder="Ingresa un número" name="error">
+          </div>
+    
+          <button id="calcular" class="btn btn-primary col-md-2">Calcular</button>
+        </aside>
+      </div>
+
+      <div class="col-md-8">
+        <section>
+          <p># de iteraciones: <span id=valor>0</span></p>
+          <div id="tabla"></div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <script src="assets/main.js"></script>
+</body>
+</html>
